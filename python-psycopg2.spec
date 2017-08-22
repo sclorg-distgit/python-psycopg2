@@ -6,7 +6,7 @@
 
 Summary:    A PostgreSQL database adapter for Python
 Name:       %{?scl_prefix}python-psycopg2
-Version:    2.7.1
+Version:    2.7.3
 Release:    1%{?dist}
 # The exceptions allow linking to OpenSSL and PostgreSQL's libpq
 License:    LGPLv3+ with exceptions
@@ -73,6 +73,10 @@ rm -rf %{buildroot}
 %doc doc examples/
 
 %changelog
+* Tue Aug 08 2017 Charalampos Stratakis <cstratak@redhat.com> - 2.7.3-1
+- Update to 2.7.3
+Resolves: rhbz#1479382
+
 * Thu Jun 15 2017 Charalampos Stratakis <cstratak@redhat.com> - 2.7.1-1
 - Update to 2.7.1 for rh-python36
 
